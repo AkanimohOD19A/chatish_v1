@@ -20,9 +20,14 @@ def initialize_app():
 def setup_sidebar():
     with st.sidebar:
         api_key = st.text_input("Enter your Cohere API Key", type="password")
+        st.link_button("Get one @ Cohere 🔗", "https://dashboard.cohere.com/api-keys")
         if not api_key:
-            st.warning("Please enter a valid API-KEY")
+            st.warning("Please enter a valid COHERE API-KEY")
+
             return None, None
+
+        st.markdown("")
+        st.markdown("")
 
         uploaded_file = st.file_uploader("Choose a file for additional context - PDFs, CSV")
         file_content = None
@@ -43,6 +48,11 @@ def setup_sidebar():
                     file_content,
                     uploaded_file
                 )
+
+        st.markdown("#")
+        st.markdown("#")
+        st.markdown("#")
+        st.write("Made with ❤️ by [Akan](https://akanimohod19a.github.io/)")
 
         return api_key, file_content
 
