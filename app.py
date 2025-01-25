@@ -6,7 +6,7 @@ import streamlit as st
 def initialize_app():
     st.set_page_config(page_title="Tabular Chatish", layout="wide")
     st.title("Chatish")
-    st.subheader("A demonstration chatbots with contextual retrieval")
+    st.subheader("A demonstration: Chatbots with contextual retrieval")
 
     if 'messages' not in st.session_state:
         st.session_state.messages = []
