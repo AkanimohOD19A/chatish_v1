@@ -31,3 +31,6 @@ Feel free to build upon this foundation and make it even better!
 ### Remember to:
 Retrieve your own [API Key](https://dashboard.cohere.com/api-keys)
 and that _LLMs are prone to hallucinations_
+
+### Deployed web application
+[Chatish UI](https://chatish.streamlit.app/)
